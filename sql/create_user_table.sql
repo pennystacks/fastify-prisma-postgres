@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS users (
+  id INTEGER PRIMARY KEY,
+  name VARCHAR NOT NULL,
+  email VARCHAR NOT NULL,
+  is_admin BOOLEAN DEFAULT false  
+);
+

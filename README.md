@@ -1,10 +1,9 @@
-# Fastify Prisma Render Pennystack
+# Fastify Prisma Postgres Pennystack
 
 ## Components
 - Fastify
 - Prisma
 - Postgres
-- Render.com
 
 ## Infrastructure
 Render.com Web Service East US (Ohio)

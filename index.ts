@@ -3,7 +3,7 @@ import { PrismaClient, User } from "@prisma/client";
 
 const db = new PrismaClient();
 
-const app = fastify();
+const app = fastify({ logger: true });
 
 app.get("/json", async (req, res) => {
   return {

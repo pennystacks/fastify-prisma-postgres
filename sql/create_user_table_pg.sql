@@ -1,0 +1,7 @@
+// Postgres
+CREATE TABLE IF NOT EXISTS users (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR NOT NULL,
+  email VARCHAR NOT NULL,
+  is_admin BOOLEAN DEFAULT false
+);
