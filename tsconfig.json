@@ -77,6 +77,5 @@
   "exclude": ["node_modules", "dist"],
   "ts-node": {
     "files": true
-  },
-  "files": ["src/index.d.ts"]
+  }
 }
