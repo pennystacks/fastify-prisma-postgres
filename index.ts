@@ -12,7 +12,7 @@ app.get("/json", async (req, res) => {
   };
 });
 
-app.get("/users/:id", async (req, res) => {
+app.get("/profile/:id", async (req, res) => {
   return await db.user.findUnique({
     where: {
       id: parseInt((req.params as { id: string }).id),
@@ -20,9 +20,11 @@ app.get("/users/:id", async (req, res) => {
   });
 });
 
-app.get("/users", async (req, res) => {
+app.get("/users/:page", async (req, res) => {
+  const page = (req.params as { page: string }).page ?? 1;
   return await db.user.findMany({
     take: 10,
+    skip: (parseInt(page) - 1) * 10,
   });
 });
 
