@@ -13,7 +13,7 @@ app.get("/json", async (req, res) => {
 });
 
 app.get("/profile/:id", async (req, res) => {
-  return await db.user.findUnique({
+  return await db.user.findUniqueOrThrow({
     where: {
       id: parseInt((req.params as { id: string }).id),
     },

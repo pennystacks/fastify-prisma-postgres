@@ -1,7 +1,3 @@
-wrk.method = "POST"
-wrk.body = '{"name": "foo", "email": "bar@email.com"}'
-wrk.headers["Content-Type"] = "application/json"
-
 done = function(summary, latency, requests)
   io.stderr:write("\n---------------------------------------\n")
 
@@ -52,11 +48,11 @@ done = function(summary, latency, requests)
       io.stderr:write(",\n")
     end
     if key == 1 then
-      io.stderr:write(string.format('%s: %ds', labels[key],value))
+      io.stderr:write(string.format("%s: %ds", labels[key],value))
     elseif key >= 10 then
-      io.stderr:write(string.format('%s: %dms', labels[key],value))
+      io.stderr:write(string.format("%s: %dms", labels[key],value))
     else
-      io.stderr:write(string.format('%s: %d', labels[key],value))
+      io.stderr:write(string.format("%s: %d", labels[key],value))
     end
   end
 

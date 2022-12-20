@@ -5,23 +5,6 @@
 - Prisma
 - Postgres
 
-## Infrastructure
-Render.com Web Service East US (Ohio)
-  
-| Property  | Value |
-| ------------- | ------------- |
-| Price  | Free  |
-| Memory  | 512MB  |
-| CPU | Shared |
-
-Supabase Postgres East US (North Virginia)
-| Property  | Value |
-| ------------- | ------------- |
-| Price  | Free  |
-| Memory  | Unknown  |
-| CPU | Unknown |
-| Storage | 500 MB |
-
 ## Running
 Add .env with DATBASE_URL
 
