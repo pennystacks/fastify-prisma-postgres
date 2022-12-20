@@ -39,7 +39,7 @@ app.post("/users", async (req, res) => {
 
 app.listen(
   {
-    port: 5000,
+    port: parseInt(process.env.PORT || "5000") ?? 5000,
   },
   (err, _addr) => {
     if (err) {
